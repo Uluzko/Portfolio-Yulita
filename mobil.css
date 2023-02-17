@@ -1,0 +1,334 @@
+@media all and  (max-width:767px) {
+    .hello {
+        top: 8%;
+        left: 35%;
+    }
+
+    nav.navbar {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .burger-menu-icon {
+        display: block;
+        z-index: 11;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        margin-right: 15px;
+    }
+
+    .burger-menu-icon span,
+    .burger-menu-icon::before,
+    .burger-menu-icon::after {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: var(--darkColor);
+    }
+
+    .burger-menu-icon::before,
+    .burger-menu-icon::after {
+        content: "";
+    }
+
+    .burger-menu-icon::before {
+        top: 0;
+    }
+
+    .burger-menu-icon::after {
+        bottom: 0;
+    }
+
+    .burger-menu-icon span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+
+    .burger-menu-icon.active span {
+        transform: scale(0) translate(0px, -50%);
+    }
+
+    .burger-menu-icon.active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+        width: 85%;
+    }
+
+    .burger-menu-icon.active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+        width: 85%;
+    }
+
+    .myName {
+        margin-left: 10px;
+    }
+
+    .circlesContainer {
+        width: 90vw;
+        height: 90vw;
+        margin-top: 45%;
+        margin-bottom: 25%;
+    }
+
+    .one {
+        width: 35%;
+        height: 35%;
+        left: 15%;
+        bottom: -5%;
+    }
+
+    .two {
+        width: 70%;
+        height: 70%;
+        left: 18%;
+        bottom: 15%;
+    }
+
+    .three {
+        width: 35%;
+        height: 35%;
+        right: 10%;
+        bottom: 75%;
+    }
+
+    .four {
+        width: 18%;
+        height: 18%;
+        left: 20%;
+        bottom: 75%;
+    }
+
+    .five {
+        width: 8%;
+        height: 8%;
+        right: 8%;
+        bottom: 37%;
+    }
+
+    .six {
+        width: 10%;
+        height: 10%;
+        right: 5%;
+        bottom: 95%;
+    }
+
+    .seven {
+        width: 12%;
+        height: 12%;
+        right: 2%;
+    }
+
+    .eight {
+        right: 3%;
+        bottom: 110%;
+    }
+
+    .nine {
+        right: 5%;
+        bottom: 20%;
+    }
+
+    .ten {
+        width: 10%;
+        height: 10%;
+        right: 20%;
+        bottom: 8%;
+    }
+
+    .eleven {
+        width: 5%;
+        height: 5%;
+        right: 48%;
+        bottom: 5%;
+    }
+
+    .twelve {
+        width: 10%;
+        height: 10%;
+        left: 8%;
+        bottom: -8%;
+    }
+
+    .thirteen {
+        width: 8%;
+        height: 8%;
+        left: 8%;
+        bottom: 33%;
+    }
+
+    .fourteen {
+        width: 12%;
+        height: 12%;
+        left: 6%;
+    }
+
+    .fifteen {
+        width: 5%;
+        height: 5%;
+        bottom: 90%;
+        z-index: 1;
+    }
+
+    p, .contact-info, .coloredAncor, .introducing {
+        font-size: 16px;
+    }
+
+    .scrollDown {
+        top: 20%;
+        margin-bottom: 10%;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .introduceMe {
+        padding: 30px;
+    }
+
+    .skills {
+        padding: 0 0 30px 0;
+        justify-content: space-around;
+    }
+
+    .skill {
+        margin: 5px;
+    }
+
+    .wallpaper {
+        height: 30vh;
+    }
+
+    .swiper {
+        display: block;
+    }
+
+    #projects-wrapper {
+        display: none;
+    }
+
+    .contacts-wrapper {
+        padding: 0;
+    }
+
+    .contact-info {
+        width: 70%;
+    }
+
+    .social {
+        width: 40%;
+    }
+
+    .back {
+        margin: 15% 10% 5% 0;
+    }
+}
+
+
+
+@media all and (min-width:768px) and (max-width:1023px) {
+    .circlesContainer {
+        width: 90vw;
+        height: 90vw;
+        margin-top: 25%;
+    }
+
+    .scrollDown {
+        top: -80px;
+    }
+
+    .swiper {
+        height: 25vh;
+    }
+
+    .swiper-slide > a, a > img  {
+        height: 14vh;
+    }
+
+    .projectOne {
+        height: 22vh;
+        margin: 1% 2% 5% 0;
+    }
+
+    .projectTwo {
+        height: 22vh;
+        margin: 1% 1% 5% 2%;
+    }
+
+    .title {
+        font-size: 25px;
+        right: 5%;
+    }
+
+    .light {
+        font-size: 18px;
+    }
+
+    .social {
+        width: 25%;
+    }
+}
+
+
+@media all and (min-width:768px) {
+    .navbar {
+        display: none;
+        margin-right: 2%;
+    }
+
+    .nav-item {
+        margin: 0 10px 0 10px;
+        font-size: 18px;
+        position: relative;
+    }
+
+    .nav-item:hover .line, .nav-item:hover .line::before {
+        transform: translateX(0);
+    }
+
+    .line {
+        position: absolute;
+        bottom: -7px;
+        height: 2px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        transform: translateX(-105%);
+        transition: 0.45s cubic-bezier(0.52, 0.01, 0.16, 1);
+    }
+
+    .line::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateX(105%);
+        transition: 0.45s cubic-bezier(0.52, 0.01, 0.16, 1);
+        background-color: var(--pinkColor);
+    }
+    
+    .line:hover::before {
+        transform: translateX(0);
+        transition: all 0.5s;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    body._touch > .circlesContainer {
+        width: 70vw;
+        height: 70vw;
+        margin-top: 9.5%;
+    }
+
+}
