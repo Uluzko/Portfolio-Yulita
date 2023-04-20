@@ -66,7 +66,7 @@ const isMobil = {
 
 function desktop () {
 let master = gsap.timeline ();
-master.add(greeting())
+master.add (greeting())
 master.add (showCircles())
 master.add (showName())
 master.add (changeBlurFilter ())
@@ -78,7 +78,7 @@ master.add (showContacts())
 
 function mobil () {
 let master = gsap.timeline ();
-master.add(greeting())
+master.add (greeting())
 master.add (showCircles())
 master.add (showName())
 master.add (changeBlurFilter ())
